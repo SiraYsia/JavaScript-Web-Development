@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afro Flicks</title>
+    <style>
+        body {
+    background-color: #cbad8d;
+    font-family: 'Instrument Serif', serif;
+}
+
+#h1header {
+    color: #304c31;
+    font-size: 45px;
+    text-indent: 40px;
+
+}
+
+#h2header {
+    color: #304c31;
+    font-size: 35px;
+    text-indent: 100px;
+}
+
+.link {
+    color: #304c31;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a48374;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #304c31;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+li a:hover {
+  background-color: #83665a;
+}
+
+p b a {
+    text-decoration: none;
+    color: #304c31;
+    border: 0.65rem inset #d9c0b0;
+    border-radius: 10px;
+    background-color: #d9c0b0;
+    padding: 14px 40px;
+    position: relative;
+    margin: 550px;
+    font-size: 22px;
+}
+ 
+p b a:hover {
+    background-color: #83665a;
+}
+
+li a:hover {
+  background-color: #83665a;
+}
+
+.review b a {
+    text-decoration: none;
+    color: #304c31;
+    border: 0.65rem inset #d9c0b0;
+    border-radius: 10px;
+    background-color: #d9c0b0;
+    padding: 14px 40px;
+    position: relative;
+    margin: 550px;
+    font-size: 22px;
+}
+ 
+.review b a:hover {
+    background-color: #83665a;
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="/appointment">Appointment</a></li>
+        <li><a href="/prices">Prices</a></li>
+        <li><a href="/review">Review</a></li>
+        <li style="float:left"><a class="active" href="/index">AfroFlicks</a></li>
+    </ul>
+    <br><br>
+    <br><br>
+    <form action="/submitreview" method="POST">
+        <fieldset>
+            <label for="writereview"><b><span style="color: #304c31; font-size: 20px;">Write your review here: </span>
+                <br><br></b></label><textarea rows="20" cols="90" required name="writereview"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit" onclick="return confirm('Are you sure you want to submit your review? You will not be able to change your review once submitted.');">
+            Submit Review</button>
+        </form>
+</body>
+</html>

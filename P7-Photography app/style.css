@@ -1,0 +1,54 @@
+body {
+    background-color: #cbad8d;
+    font-family: 'Instrument Serif', serif;
+}
+
+h2 {
+    color: #304c31;
+    font-size: 35px;
+    text-indent: 100px;
+}
+
+.pricing-option {
+    background-color: #d9c0b0;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.pricing-option h3 {
+    color: #304c31;
+    font-size: 28px;
+}
+
+.pricing-option ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pricing-option li {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.pricing-option li:last-child {
+    font-weight: bold;
+}
+
+.pricing-option li:nth-child(even) {
+    color: #83665a;
+}
+
+.pricing-option li:nth-child(odd) {
+    color: #304c31;
+}
+
+.pricing-option:hover {
+    background-color: #83665a;
+}
+
+.pricing-option:hover h3,
+.pricing-option:hover li {
+    color: #fff;
+}
