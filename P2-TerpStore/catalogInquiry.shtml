@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Catolog Inquiry</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body id = "catbody">
+    <div id="header-cat">
+		<h1>Catalog Inquiry Store</h1>
+	</div>
+
+
+ <div id="container">
+
+    <form action="http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php" method="get">
+        <label for="item-choice"><u>Item Category </u></label>
+        <input list="options" name="item-choice" id="item-choice" required autofocus>
+    
+        <datalist id="options">
+            <option value="clothes">
+            <option value="books">
+            <option value="music">
+            <option value="food">
+            <option value="other">
+        </datalist>
+    
+        <br> 
+        <br> 
+        <label for="maximum-cost"><u>Maximum cost($)</u></label>
+        <input type="number" id="maximum-cost" name="maximumCost" min="1" max="1000" value="1" step="5">
+        
+        <br>
+        <br>
+        <label><input type="checkbox" name="availableOnCampus"><u>Available on Campus</u></label><br>
+        <br>
+        <label><input type="checkbox" name="availableOnline" checked><u>Available Online</u></label><br>
+        
+        <u> Aditional Information</u><br>
+        <textarea name="additionalInfo" rows="8" cols="50"></textarea>
+            
+
+
+        <br><br>
+        <label for="email">Contact Email address:</label>
+<input type="text" id="email" name="email" value="example@terpmail.com" onfocus="if (this.value=='example@terpmail.com') this.value='';" >
+<br>
+<br>
+        <input type="submit" value = "Submit Inquiry"> &nbsp; &nbsp; 
+        <input type="reset" value = "Clear">
+
+    </form>
+</div>
+
+    <div id = "footer"> 
+        <!--#include virtual="footer.shtml" -->
+</div>
+</body>
+</html>

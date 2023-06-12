@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Viewer System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> <u> Photo Viewer  </u>  </h1>
+    </header>
+    <main>
+        <div id="photo-container">
+            <img src="InitialImage.jpg" alt="Initial Image">
+        </div>
+        <div id="controls">
+            <div id="buttons">
+                <fieldset id="status">
+                    <legend> <strong> Status</strong>  </legend>
+                    <label for="photo-display-input" class="disabled-input">Photo Being Displayed:</label>
+                                            
+                        <input type="text" id="photo-display-input" value = " InitialImage.jpg" class="disabled-input" disabled>
+                        <div id = "system" >  </div>
+
+                </fieldset>
+                
+                <fieldset id="LocalFolder">
+                    <legend> <strong>   Loading Images(Local Folder) </strong> </legend>
+                    <label for="folder-name-input">Photo's Folder:</label>
+                    <input type="text" id="folder-name-input" value="umcp/"> 
+                    <label for="common-name-input">Common Name:</label>
+                    <input type="text" id="common-name-input" value="College"> <!-- set default value to "College" -->
+                    <br>
+                    <br>
+
+                    <label for="start-photo-input">Start Photo Number:</label>
+                    <input type="number" id="start-photo-input" min="1">
+                    <label for="end-photo-input">End Photo Number:</label>
+                    <input type="number" id="end-photo-input" min="1">
+                    <button id="load-photos-btn">Load Photos</button>
+                </fieldset>
+
+                <fieldset id="JSONFILE">
+                    <legend> <strong>   Loading Images(JSON File) </strong> </legend>
+                    <label> URL: <input type="text" id="json-file-url-input" value = "http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/imagesSet1.json"></label>
+                    &nbsp;
+                    <button id="load-json-btn">Load JSON</button> 
+                </fieldset>
+
+                <fieldset id="Iterating">
+                    <legend> <strong>  Iterating </strong> </legend>
+                    <button id="prev-photo-btn">Previous Photo</button>
+                    <button id="next-photo-btn">Next Photo</button>
+                    <button id="first-photo-btn">First Photo</button>
+                    <button id="last-photo-btn">Last Photo</button>
+                </fieldset>
+
+                <fieldset id="SlideShow">
+                    <legend><strong>  SlideShows </strong> </legend>
+                    <button id="slideshow-btn">SlideShow</button>
+                    <button id="random-slideshow-btn">Random SlideShow</button>
+                    <button id="stop-slideshow-btn">Stop SlideShow</button>
+                </fieldset>
+
+                <input type="reset" id = "button" value="Reset Values">
+
+            </div>
+        </div>
+    </main>
+    <script src="code.js"></script>
+</body>
+</html>

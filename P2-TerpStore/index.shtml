@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Terp Store</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+  <body id="index">
+
+  <div id="header-index">
+		<h1><u> Terp Store </u></h1>
+	</div>
+
+  <div id="main">
+		<div id="links">
+      
+      <ul>
+            <li><a href="./catalogInquiry.shtml"><u>Catalog Inquiry</u></a></li>
+            <li><a href="placingOrder.shtml"><u>Placing Order</u></a></li>
+          </ul>
+        
+      </div>
+    </div>
+
+    <div id = "footer"> 
+                <!--#include virtual="footer.shtml" -->
+    </div>
+
+  </body>
+ </html>
+
+

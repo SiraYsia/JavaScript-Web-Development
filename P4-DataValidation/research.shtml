@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Photo Viewer System</title>
+    <link rel="stylesheet" href="research.css" />
+  </head>
+  <body>
+    <form id="researchForm" method="GET" action="researchProcessing.php">
+      <header>
+        <h1><u> Research Form </u></h1>
+      </header>
+      <fieldset id="General_information">
+        <legend id="gen"><strong> General Information </strong></legend>
+
+        Firstname:
+        <input
+          type="text"
+          id="first_n"
+          name="firstname"
+          value=""
+          autofocus
+          required
+        />
+        Lastname:
+        <input type="text" id="last_n" name="lastname" value="" required />
+
+        <br />
+        <br />
+
+        <label>Phone:</label>
+
+        <input
+          type="tel"
+          id="phone"
+          name="phoneFirstPart"
+          maxlength="3"
+          size="3"
+          required
+        />
+        -
+        <input
+          type="tel"
+          id="phone2"
+          name="phoneSecondPart"
+          maxlength="3"
+          size="3"
+          required
+        />
+        -
+        <input
+          type="tel"
+          id="phone3"
+          name="phoneThirdPart"
+          maxlength="4"
+          size="4"
+          required
+        />
+
+        Email: <input id="emailaddress" type="email" name="email" required />
+      </fieldset>
+
+      <br />
+
+      <fieldset id="research_data">
+        <legend id="res"><strong> Research Study Data </strong></legend>
+        <fieldset id="Age">
+          <legend><strong> Age/Height/Weight </strong></legend>
+
+          Age:
+          <input
+            type="number"
+            id="age"
+            type="age"
+            name="age"
+            min="1"
+            max="125"
+          />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+
+          <label for="height"><strong>Height: </strong></label>
+          <input
+            type="number"
+            id="height"
+            type="text"
+            name="heightFeet"
+            min="2"
+            max="7"
+          />
+          <em>Feet </em>
+          <input
+            type="number"
+            id="inches"
+            type="text"
+            name="heightInches"
+            min="0"
+            max="11"
+          />
+          <em>Inches </em> &nbsp;&nbsp;&nbsp;&nbsp;
+
+          <label for="weight"><strong>Weight: </strong></label>
+          <input
+            type="number"
+            id="weight"
+            type="weight"
+            name="weight"
+            min="1"
+            max="600"
+            value=" pounds"
+          /><em> Pounds </em>
+        </fieldset>
+        <br />
+
+        <fieldset id="conditions">
+          <legend><strong> Conditions </strong></legend>
+
+          Which of the following conditions are present in your family? (Check
+          all that apply)
+          <br />
+          <input
+            type="checkbox"
+            name="highBloodPressure"
+            value="High Blood Pressure"
+          />High Blood Pressure
+          <input type="checkbox" name="diabetes" value="Diabetes" />Diabetes
+          <input type="checkbox" name="glaucoma" value="Glaumcma" />Glaumcma
+          <input type="checkbox" name="asthma" value="Asthma" />Asthma
+          <input type="checkbox" name="none" value="None" />None
+        </fieldset>
+        <br />
+
+        <fieldset id="time">
+          <legend><strong>Time Period</strong></legend>
+          How long have you experienced any of the above conditions?<br />
+          <label><input type="radio" name="period" value="Never" />Never</label>
+          <label
+            ><input type="radio" name="period" value="Less than a year" />Less
+            than a year</label
+          >
+          <label
+            ><input type="radio" name="period" value="One to two years" />One to
+            two years</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="period"
+              value="More than two years"
+            />More than two years</label
+          >
+        </fieldset>
+
+        <br />
+
+        <fieldset id="Study_info">
+          <legend><strong> Study Information </strong></legend>
+
+          <label for="study-type"> Which Study are you taking part of? </label>
+
+          <select id="study-type" name="studyType">
+            <option value="long-term">Long Term</option>
+            <option value="short-term">Short Term</option>
+          </select>
+          &nbsp;&nbsp;&nbsp;
+
+          <label for="STDID"> Assigned Student Id:</label>
+          <input
+            type="text"
+            id="first"
+            name="firstFourDigits"
+            maxlength="4"
+            size="4"
+            placeholder="A777"
+            required
+          />-
+          <input
+            type="text"
+            id="second"
+            name="secondFourDigits"
+            maxlength="4"
+            size="4"
+            placeholder="B888"
+            required
+          />
+        </fieldset>
+
+        <br />
+        <fieldset>
+          <legend><strong> Additional Information (Comments) </strong></legend>
+          <textarea
+            id="additionaltext"
+            rows="5"
+            cols="80"
+            name="comments"
+          ></textarea>
+        </fieldset>
+      </fieldset>
+      <br />
+      <fieldset>
+        <button id="sub" type="submit">Submit Inforfmation</button>
+        <button type="reset">Clear Form</button>
+      </fieldset>
+      <script src="code.js"></script>
+    </form>
+    <br />
+    <!--#include virtual="footer.shtml" -->
+  </body>
+</html>

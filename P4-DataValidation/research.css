@@ -1,0 +1,76 @@
+legend {
+    color: rgb(159, 70, 26);
+  }
+  header {
+    text-decoration: underline;
+    font-family: Times;
+    font-weight: 0.1em;
+    text-shadow: 0.2px 2px 2px #191818;
+  }
+  #gen{
+    font-style: italic;
+  }
+
+  #res{
+    font-style: italic;
+  }
+  fieldset {
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  #emailaddress{
+    width: 400px;
+    height: 20px;
+  }
+  #age{
+    width: 50px;
+    height: 20px;
+  }
+
+  #height{
+    width: 50px;
+    height: 20px;
+  }
+  #inches{
+    width: 50px;
+    height: 20px;
+  }
+  #phone{
+        width: 50px;
+        height: 20px; 
+  }
+  #phone3{
+    width: 50px;
+    height: 20px;
+
+} #phone2{
+    width: 50px;
+    height: 20px;
+
+}
+
+  #weight{
+    width: 50px;
+    height: 20px;
+  }
+
+  #first_n{
+    width: 150px;
+    height: 16px;
+  }
+  #last_n{
+    width: 150px;
+    height: 16px;
+  }
+#additionaltext{
+    width: 700px;
+    height: 120px;
+}
+#incs{
+font-style: italic;
+}
+#fet{
+    font-style: italic;
+
+}
